@@ -5,15 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Noah Johnson - Contact</title>
       
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
+        <!-- JavaScript -->
         <script defer src="assets/js/main.js"></script>
-      </head>
+    </head>
 <body>
     <div class="containerForm">
         <div class="left_Side">
-            <div class="tenor-gif-embed" data-postid="6073080" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/mail-dog-animation-gif-6073080">Mail GIF</a>from <a href="https://tenor.com/search/mail-gifs">Mail GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <!-- Tenor GIF Embed -->
+            <div class="tenor-gif-embed" data-postid="6073080" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/mail-dog-animation-gif-6073080">Mail GIF</a>from <a href="https://tenor.com/search/mail-gifs">Mail GIFs</a></div> 
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         </div>
         <div class="right_Side">
             <h2 class="title">Get in touch</h2>
@@ -26,20 +30,29 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://n0aheuw.github.io/noah/index.html">
                 
+                <!-- Name Field -->
                 <div class="name">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" name="Name" id="name" required>
                 </div>
+                
+                <!-- Email Field -->
                 <div class="email">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="Email" id="email" required>
                 </div>
+                
+                <!-- Message Field -->
                 <div class="message">
                     <label for="message">Messages & Questions</label>
                     <textarea  class="form-control" id="message" name="Message&nbsp;and&nbsp;Questions" required></textarea>
                 </div>
 
+                <!-- Submit Button -->
                 <button type="submit">Send E-Mail <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                
+                <!-- Back Button-->
+                <button onclick="history.back()"><i class="fa fa-arrow-left" aria-hidden="true"></i>Go Back</button>
 			</form>
         </div>
     </div>
