@@ -3,6 +3,7 @@
     --primary-color: #2E4756;
     --secondary-color: #9FA2B2;
     --tertiary-color: #ede7ea;
+    --tertiary-color-dark: #c5bfc2;
     --quaternary-color: #2E4756;
     --quinary-color: #16262E;
 }
@@ -116,6 +117,7 @@ body {
 .contact_Info .button_Center button{
     display: block;
     width: 80%;
+    max-width: 300px;
     margin: 0 auto;
     border-radius: 4px;
     transition-duration: 0.4s;
@@ -125,6 +127,7 @@ body {
 
 .contact_Info .button_Center button:hover{
     color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
     background-color: var(--primary-color);   
 }
 
@@ -165,6 +168,7 @@ body {
     background-color: var(--primary-color);
 
 }
+
 .container .right_Side{
     position: relative;
     background: var(--tertiary-color);
@@ -209,12 +213,140 @@ body {
     font-size: 16px;
 }
 
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skills ul li{
+    list-style: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.skills ul li .fa{
+    list-style: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    width: 20px;
+}
+
 .right_Side p {
     color: var(--quinary-color);
 
 }
+
+
+.containerForm{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;  
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    
+}
+
+.containerForm .left_Side{
+    position: relative;
+    background: var(--secondary-color);
+    padding: 40px;
+}
+
+.containerForm .right_Side{
+    position: relative;
+    background: var(--tertiary-color);
+    padding: 40px;
+}
+
+.right_Side form{
+    position: relative;
+}
+
+.right_Side form .name{
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.right_Side form .email{
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.right_Side form .message{
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 100%;
+}
+
+.right_Side form button{
+    position: relative;
+    font-size: 18px;
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+.right_Side form button:hover{
+    background-color: var(--tertiary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);   
+}
+
+
 @media (prefers-reduced-motion) {
     .contact_Info .button_Center {
         transition: none;
+    }
+
+    .right_Side form button {
+        transition: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills ul{
+        grid-template-columns: repeat(2, 1fr);       
+    }
+
+    .containerForm{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about .box{
+        flex-direction: column;
+    }
+
+    .about .box .year_Company{
+        margin-bottom: 5px;
+    }
+
+    .skills .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .containerForm{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
