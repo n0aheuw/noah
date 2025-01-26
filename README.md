@@ -1,12 +1,10 @@
-My Website
-=======
-noah is my personal website repositry where you can see all the nitty gritty of howw I made it i have linked below the website i used as my base for my website.
+# Hi there, welcome to my Website Repo 👋
 
-Base
-------------
-https://startbootstrap.com/template/scrolling-nav
+This is my repository for my website developed in HTML, CSS, and JS
 
-Contributors
-------------
+---
 
-* no0n00 :)
+### Languages & Tools:
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
