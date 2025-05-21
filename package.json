@@ -1,7 +1,7 @@
 {
   "name": "noah-portfolio",
-  "homepage": "https://n0aheuw.github.io/",
-  "private": false,
+  "homepage": "https://n0aheuw.github.io/noah",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

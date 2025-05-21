@@ -33,25 +33,25 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => handleScroll("home")}
-              className="text-secondary-color hover:text-tertiary transition-colors font-lato font-bold"
+              className="text-[rgba(var(--primary-color-rgb),1)] hover:text-[rgba(var(--tertiary-color-rgb),1)] transition-colors font-lato font-bold"
             >
               Home
             </button>
             <button
               onClick={() => handleScroll("about")}
-              className="text-secondary hover:text-tertiary transition-colors font-lato font-bold"
+              className="text-[rgba(var(--primary-color-rgb),1)] hover:text-[rgba(var(--tertiary-color-rgb),1)] transition-colors font-lato font-bold"
             >
               About
             </button>
             <button
               onClick={() => handleScroll("blog")}
-              className="text-secondary hover:text-tertiary transition-colors font-lato font-bold"
+              className="text-[rgba(var(--primary-color-rgb),1)] hover:text-[rgba(var(--tertiary-color-rgb),1)] transition-colors font-lato font-bold"
             >
               Blog
             </button>
             <button
               onClick={() => handleScroll("contact")}
-              className="text-secondary hover:text-tertiary transition-colors font-lato font-bold"
+              className="text-[rgba(var(--primary-color-rgb),1)] hover:text-[rgba(var(--tertiary-color-rgb),1)] transition-colors font-lato font-bold"
             >
               Contact
             </button>

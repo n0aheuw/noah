@@ -15,7 +15,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     >
       <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-6 text-tertiary text-3xl focus:outline-none cursor-pointer"
+        className="absolute top-6 right-6 text-[rgba(var(--primary-color-rgb),1)] text-3xl focus:outline-none cursor-pointer"
         aria-label="Close menu"
       >
         &times;
@@ -23,7 +23,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
       <button
         onClick={() => handleScroll("home")}
-        className={`text-2xl font-semibold text-tertiary my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-[rgba(var(--primary-color-rgb),1)] my-4 transform transition-transform duration-300 ${
           menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
         }`}
       >
@@ -31,7 +31,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </button>
       <button
         onClick={() => handleScroll("about")}
-        className={`text-2xl font-semibold text-tertiary my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-[rgba(var(--primary-color-rgb),1)] my-4 transform transition-transform duration-300 ${
           menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
         }`}
       >
@@ -39,7 +39,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </button>
       <button
         onClick={() => handleScroll("blog")}
-        className={`text-2xl font-semibold text-tertiary my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-[rgba(var(--primary-color-rgb),1)] my-4 transform transition-transform duration-300 ${
           menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
         }`}
       >
@@ -47,7 +47,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </button>
       <button
         onClick={() => handleScroll("contact")}
-        className={`text-2xl font-semibold text-tertiary my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-[rgba(var(--primary-color-rgb),1)] my-4 transform transition-transform duration-300 ${
           menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
         }`}
       >
