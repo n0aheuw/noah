@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #ede7ea;
+  --primary-color-rgb: 237, 231, 234;
+
+  --secondary-color: #9FA2B2;
+  --secondary-color-rgb: 159, 162, 178;
+
+  --tertiary-color: #3c7a89;
+  --tertiary-color-rgb: 60, 122, 137;
+
+  --quaternary-color: #2E4756;
+  --quaternary-color-rgb: 46, 71, 86;
+
+  --quinary-color: #16262E;
+  --quinary-color-rgb: 22, 38, 46;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: var(--quaternary-color);
+  color: var(--primary-color);
+}
+
+@layer utilities{
+  @keyframes blink{
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }  
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
